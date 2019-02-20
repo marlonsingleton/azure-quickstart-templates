@@ -78,6 +78,7 @@
       "maxValue": 50
     },
     "kubernetesAgentVMSize": {
+      "comments": "Too many options",
       "type": "string",
       "defaultValue": "Standard_D2_v2",
       "allowedValues": [
