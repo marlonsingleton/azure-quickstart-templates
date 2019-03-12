@@ -30,10 +30,7 @@
       "metadata": {
         "description": "Tier of your Azure Container Registry.  Geo replicatoin requires Premium SKU."
       },
-      "defaultValue": "Premium",
-      "allowedValues": [
-        "Premium"
-      ]
+      "defaultValue": "Premium"
     },
     "acrReplicaLocation": {
       "type": "string",
@@ -60,17 +57,6 @@
       "properties": {
         "adminUserEnabled": "[parameters('acrAdminUserEnabled')]"
       }
-    },
-    {
-      "name": "[concat(parameters('acrName'), '/', parameters('location'))]",
-      "condition": "string",
-      "type": "Microsoft.ContainerRegistry/registries/replications",
-      "apiVersion": "2017-10-01",
-      "location": "[parameters('location')]",
-      "properties": {},
-      "dependsOn": [
-        "[concat('Microsoft.ContainerRegistry/registries/', parameters('acrName'))]"
-      ]
     },
     {
       "name": "[concat(parameters('acrName'), '/', parameters('acrReplicaLocation'))]",
