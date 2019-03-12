@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "acrName": {
-      "value": "GEN-UNIQUE"
+      "value": "conrep101"
     },
     "acrReplicaLocation": {
       "value": "eastus"
