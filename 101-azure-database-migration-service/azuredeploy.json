@@ -62,7 +62,7 @@
     },
     "variables": {
         "DMSServiceName": "db-migration",
-        "sourceServerName": "[take(concat('Source', uniqueString(resourceGroup().id)), 15)]",
+        "sourceServerName": "[concat('Source', uniqueString(resourceGroup().id))]",
         "targetServerName": "[concat('targetservername', uniqueString(resourceGroup().id))]",
         "scriptLocation": "AddDatabaseToSqlServer.ps1 ",
         "bakFileLocation": "AdventureWorks2016.bak",
