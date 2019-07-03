@@ -61,7 +61,7 @@
         }
     },
     "variables": {
-        "DMSServiceName": "[concat('DMS', uniqueString(resourceGroup().id))]",
+        "DMSServiceName": "db-migration",
         "sourceServerName": "[take(concat('Source', uniqueString(resourceGroup().id)), 15)]",
         "targetServerName": "[concat('targetservername', uniqueString(resourceGroup().id))]",
         "scriptLocation": "AddDatabaseToSqlServer.ps1 ",
