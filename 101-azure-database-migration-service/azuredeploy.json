@@ -87,14 +87,14 @@
         {
             "type": "Microsoft.Compute/virtualMachines",
             "name": "[variables('sourceServerName')]",
-            "apiVersion": "2017-12-01",
+            "apiVersion": "2018-10-01",
             "location": "[parameters('location')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/networkInterfaces', variables('sourceNicName'))]"
             ],
             "properties": {
                 "hardwareProfile": {
-                    "vmSize": "Standard_D2_v2"
+                    "vmSize": "Standard_DS12_v2"
                 },
                 "storageProfile": {
                     "imageReference": {
